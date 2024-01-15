@@ -1,0 +1,94 @@
+/* This is font link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+/* this is Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+/* Shared style here */
+.btn-primary {
+    background-color: #E02C6D;
+    margin-top:10px;
+    padding:10px;
+    border:none;
+    color: white;
+    border-radius:41px;
+}
+/* Header style */
+header {
+ max-width:1480px;
+  margin: 0 auto;
+}
+/* this is nav related style here */
+nav {
+  padding-top: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-title {
+  color: #3a3a3a;
+  font-size:1.25rem;
+  font-weight: 700;
+}
+.Nav-link > ul {
+  display: flex;
+}
+.Nav-link li {
+  list-style: none;
+  margin-left: 20px;
+}
+.Nav-link li a {
+  color: #3a3a3a;
+  font-size:1rem;
+  font-weight: 600;
+}
+/* this is banner section related style here */
+.banner {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-content {
+  /* padding-right: 130px; */
+}
+.banner-title {
+  color: #3a3a3a;
+  font-size:3.25rem;
+  font-weight: 700;
+}
+.banner-description {
+  color: #3a3a3a;
+  font-size:1rem;
+  font-weight: 600;
+}
+.banner-image {
+  background-image: url(../images/Circle\ design.svg);
+  background-size:cover;
+}
+.banner-img {
+  width:100%;
+}
+/* Media Screen control */
+/* Mobile Device */
+@media screen and (max-width:576px) {
+    nav,
+    .banner{
+        flex-direction: column;
+    }
+    .banner-content{
+        text-align: center;
+    }
+}
+
+/* Medium Device */
+@media screen and (min-width:576px)  and (Max-width:980px){
+    nav,
+    .banner{
+        flex-direction: column;
+    }
+}
